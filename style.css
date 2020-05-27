@@ -35,6 +35,25 @@
           color: #DCDCDC;
           text-align: center;
           }
+          h4 {
+          font-family: verdana;
+          color: white;
+          text-align: left;
+          text-decoration: underline;
+          text-decoration-color: #DCDCDC;
+          }
+          p4 {
+          font-family: verdana;
+          color: #DCDCDC;
+          text-align: center;
+          }
+          h5 {
+          font-family: verdana;
+          color: white;
+          text-align: left;
+          text-decoration: underline;
+          text-decoration-color: #DCDCDC;
+          }
           .class{margin: 0 auto;
                width: 100%;
                height: auto;}
