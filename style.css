@@ -1,0 +1,37 @@
+          body {
+          background-color: #000033;
+          }
+          h1 {
+          font-family: verdana;
+          color: white;
+          text-align: center;
+          }
+          p1 {
+          font-family: verdana;
+          color: #DCDCDC;
+          text-align: center;
+          }
+          h2 {
+          font-family: verdana;
+          color: white;
+          text-align: left;
+          text-decoration: underline;
+          text-decoration-color: #DCDCDC;
+          }
+          p2 {
+          font-family: verdana;
+          color: #DCDCDC;
+          text-align: left;
+          }
+          h3 {
+          font-family: verdana;
+          color: white;
+          text-align: left;
+          text-decoration: underline;
+          text-decoration-color: #DCDCDC;
+          }
+          p3 {
+          font-family: verdana;
+          color: #DCDCDC;
+          text-align: center;
+          }
