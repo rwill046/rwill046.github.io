@@ -23,37 +23,27 @@
           color: #DCDCDC;
           text-align: left;
           }
-          h3 {
-          font-family: verdana;
-          color: white;
-          text-align: left;
-          text-decoration: underline;
-          text-decoration-color: #DCDCDC;
-          }
           p3 {
           font-family: verdana;
           color: #DCDCDC;
           text-align: center;
-          }
-          h4 {
-          font-family: verdana;
-          color: white;
-          text-align: left;
-          text-decoration: underline;
-          text-decoration-color: #DCDCDC;
           }
           p4 {
           font-family: verdana;
           color: #DCDCDC;
           text-align: center;
           }
-          h5 {
-          font-family: verdana;
-          color: white;
-          text-align: left;
-          text-decoration: underline;
-          text-decoration-color: #DCDCDC;
+          .image{
+               text-align: center;
+               padding: 2%;
           }
-          .class{margin: 0 auto;
-               width: 100%;
-               height: auto;}
+          .likert{
+              list-style: none;
+              text-align: center;
+              padding-top: 1%;
+          }
+          .likert li{
+              display: inline;
+              font-family: verdana;
+              color: #DCDCDC;
+          }
