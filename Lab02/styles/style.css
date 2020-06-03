@@ -1,4 +1,16 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+h1 {
+          color: black;
+          text-align: center;
+          }
+p1 {
+          color: black;
+          text-align: center;
+          }
+p7 {
+          color: white;
+          text-align: center;
+          }
 
 /* Style the tab */
 .tab {
