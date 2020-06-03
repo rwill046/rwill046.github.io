@@ -4,22 +4,95 @@
 
 var products = [
 	{
-		name: "brocoli",
+		name: "Brocoli",
 		vegetarian: true,
 		glutenFree: true,
+		organic: true,
 		price: 1.99
 	},
 	{
-		name: "bread",
+		name: "Bread",
 		vegetarian: true,
 		glutenFree: false,
+		organic: false,
 		price: 2.35
 	},
 	{
-		name: "salmon",
+		name: "Salmon",
 		vegetarian: false,
 		glutenFree: true,
+		organic: false,
 		price: 10.00
+	}
+	{
+		name: "Onion",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 2.00
+	}
+	{
+		name: "Rib Eye Steak",
+		vegetarian: false,
+		glutenFree: true,
+		organic: false,
+		price: 15.00
+	}
+	{
+		name: "Eggs",
+		vegetarian: false,
+		glutenFree: true,
+		organic: false,
+		price: 5.00
+	}
+	{
+		name: "Milk",
+		vegetarian: true,
+		glutenFree: true,
+		organic: false,
+		price: 4.00
+	}
+	{
+		name: "Apples",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 3.50
+	}
+	{
+		name: "Lamb",
+		vegetarian: false,
+		glutenFree: true,
+		organic: false,
+		price: 7.50
+	}
+	{
+		name: "Mushrooms",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 5.00
+	}
+	{
+		name: "Pears",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 3.25
+	}
+	{
+		name: "Bell Peppers",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 5.50
+	}
+	{
+		name: "Pork Sausages",
+		vegetarian: false,
+		glutenFree: true,
+		organic: false,
+		price: 6.00
 	}
 ];
 	
