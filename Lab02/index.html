@@ -10,9 +10,8 @@
 </head>
 
 <body>
-
-<h1>GOGROCERIES</h1>
-<p1> Welcome to GoGroceries!<br>We're here to provide speedy service.</p1>
+<img src="images/gg.jpeg" class="center" style="width:35%;"><br>
+<h1> Welcome to GoGroceries!<br>We're here to provide speedy service.</h1>
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
@@ -24,20 +23,23 @@
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
-  <p>Tell us a bit about you.</p>
-	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-    <option value="None">None</option>
-	</select>
+  <p>Let us help you select your items.</p>
+	Choose a Category of Items:<br>
+	<input type="checkbox" id="v" value="Vegetarian">
+  	<label for="v"> Vegetarian Items </label><br>
+  	<input type="checkbox" id="g" value="GlutenFree">
+  	<label for="g"> Gluten Free Items </label><br>
+  	<input type="checkbox" id="o" value="Organic">
+  	<label for="o"> Organic Items</label><br>
+  	<input type="checkbox" id="a" value="All">
+  	<label for="a"> All Items</label><br>
+    <button id = "dispProd" type="button" onclick="populateListProductChoices(this.id, 'displayProduct')">View Items</button>
 </div>
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
-  <p>We preselected products based on your restrictions.</p>
-	 Choose items to buy:
+  <p>We preselected products based on your preferences.</p>
+	 <p id = "nd" >Please Select a Preference</p>
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add selected items to cart.
@@ -55,7 +57,7 @@
 
 </body>
 
-<footer style = "text-align: center; background-color:black;">
+<footer style = "text-align: center; background-color:#00b300;">
   	<p7>Website Designed by: Rohaan Williams (#300010136)</p7> 
 	</footer>
 
