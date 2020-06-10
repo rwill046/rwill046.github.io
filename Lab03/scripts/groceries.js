@@ -4,7 +4,7 @@
 
 var products = [
 	{
-		name: "Brocoli",
+		name: "Broccoli",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -149,7 +149,6 @@ function productPrice(productName){
 		}
 	}
 }
-
 
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {

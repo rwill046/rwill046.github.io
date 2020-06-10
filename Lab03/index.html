@@ -5,35 +5,34 @@
 	<title>
 		GoGroceries
 	</title>
-
 	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<img src="images/gg.jpeg" class="image1" style="width:35%;"><br>
+<a href="https://rwill046.github.io/Lab03/index.html"><img src="images/gg.jpeg" class="image1" style="width:35%;"></a>
 
 <div class = "container">
   <img src="images/background.jpg" class="background" style="width: 100%;">
   <div class = "centered">
-    <h1> WELOME TO GOGROCERIES!</h1>
-    <h2>We're here to provide speedy service.</h2>
+    <h1>WELOME TO GOGROCERIES</h1>
+    <h2>We're here to provide speedy service</h2>
   </div>
 </div>
 
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Home</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Browse</button>
   <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
 </div>
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
-  <h3>Client Information</h3>
-  <p>Let us help you select your items.</p>
-	Choose a Category of Items:<br>
+  <h3>Let's pick what's right for you</h3>
+  <hr>
+	Your Preferences:<br>
 	<input type="checkbox" id="v" value="Vegetarian">
   	<label for="v"> Vegetarian Items </label><br>
   	<input type="checkbox" id="g" value="GlutenFree">
@@ -47,6 +46,7 @@
 
 <div id="Products" class="tabcontent">
   <h3>Your targeted products</h3>
+  <hr>
   <p>We preselected products based on your preferences.</p>
 	 <p id = "nd" >Please Select a Preference</p>
 	 <div id="displayProduct"></div>
@@ -57,6 +57,7 @@
 
 <div id="Cart" class="tabcontent">
   <h3>Cart</h3>
+  <hr>
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
 </div>

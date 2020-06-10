@@ -2,6 +2,9 @@
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
+document.getElementsByClassName('tablinks')[0].click()
+
+
 function openInfo(evt, tabName) {
 
 	// Get all elements with class="tabcontent" and hide them
@@ -19,8 +22,8 @@ function openInfo(evt, tabName) {
 	// Show the current tab, and add an "active" class to the button that opened the tab
 	document.getElementById(tabName).style.display = "block";
 	evt.currentTarget.className += " active";
-
 }
+
 	
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
@@ -69,6 +72,7 @@ function populateListProductChoices(slct1, slct2) {
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
+	document.getElementsByClassName('tablinks')[1].click()
 }
 	
 // This function is called when the "Add selected items to cart" button in clicked
@@ -98,5 +102,5 @@ function selectedItems(){
 	// add paragraph and total price
 	c.appendChild(para);
 	c.appendChild(document.createTextNode("Total Price is: $" + getTotalPrice(chosenProducts)));
-		
+	document.getElementsByClassName('tablinks')[2].click()
 }
