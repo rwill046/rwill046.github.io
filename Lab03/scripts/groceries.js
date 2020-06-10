@@ -60,13 +60,6 @@ var products = [
 		price: 3.50
 	},
 	{
-		name: "Lamb",
-		vegetarian: false,
-		glutenFree: true,
-		organic: false,
-		price: 7.50
-	},
-	{
 		name: "Chocolate Cake",
 		vegetarian: true,
 		glutenFree: false,
