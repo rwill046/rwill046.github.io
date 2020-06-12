@@ -36,7 +36,7 @@ var products = [
 		category: "vegetable"
 	},
 	{
-		name: "Rib Eye Steak",
+		name: "Steak",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
@@ -44,7 +44,7 @@ var products = [
 		category: "meat"
 	},
 	{
-		name: "Swiss Cheese",
+		name: "Cheese",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
@@ -76,7 +76,7 @@ var products = [
 		category: "fruit"
 	},
 	{
-		name: "Chocolate Cake",
+		name: "Cake",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
@@ -92,7 +92,7 @@ var products = [
 		category: "dairy"
 	},
 	{
-		name: "Bell Peppers",
+		name: "Capsicum",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -100,7 +100,7 @@ var products = [
 		category: "vegetable"
 	},
 	{
-		name: "Pork Sausages",
+		name: "Sausages",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
