@@ -2,7 +2,24 @@
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
+//Default tab
 document.getElementsByClassName('tablinks')[0].click()
+
+//Accordian
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 
 
 function openInfo(evt, tabName) {
@@ -28,7 +45,7 @@ function openInfo(evt, tabName) {
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
-function populateListProductChoices(slct1, slct2) {
+function populateListProductChoices(slct1) {
     var s1 = [];
     if (document.getElementById("v").checked) {
         s1.push("Vegetarian");
@@ -42,9 +59,16 @@ function populateListProductChoices(slct1, slct2) {
     if (document.getElementById("a").checked) {
         s1.push("All");
     }
-    var s2 = document.getElementById(slct2);
-	
+    var s2 = document.getElementById("displayVegetables");
+	var s3 = document.getElementById("displayFruits");
+	var s4 = document.getElementById("displayMeats");
+	var s5 = document.getElementById("displayDairy");
+	var s6 = document.getElementById("displayBakery");
     s2.innerHTML = "";
+    s3.innerHTML = "";
+    s4.innerHTML = "";
+    s5.innerHTML = "";
+    s6.innerHTML = "";
 		
 	// obtain a reduced list of products based on restrictions
     var optionArray = restrictListProducts(products, s1);
@@ -61,16 +85,42 @@ function populateListProductChoices(slct1, slct2) {
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
 		checkbox.value = productName;
-		s2.appendChild(checkbox);
+		if (productCat(productName) == "vegetable"){
+			s2.appendChild(checkbox);
+		}
+		if (productCat(productName) =="fruit"){
+			s3.appendChild(checkbox);
+		}
+		if (productCat(productName) == "meat"){
+			s4.appendChild(checkbox);
+		}
+		if (productCat(productName) == "dairy"){
+			s5.appendChild(checkbox);
+		}
+		if (productCat(productName) == "bakery"){
+			s6.appendChild(checkbox);
+		}
+		
 		
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName + "	[$" + productPrice(productName) +"]"));
-		s2.appendChild(label);
-		
-		// create a breakline node and add in HTML DOM
-		s2.appendChild(document.createElement("br"));    
+		if (productCat(productName) == "vegetable"){
+			s2.appendChild(label);
+		}
+		if (productCat(productName) == "fruit"){
+			s3.appendChild(label);
+		}
+		if (productCat(productName) == "meat"){
+			s4.appendChild(label);
+		}
+		if (productCat(productName) == "dairy"){
+			s5.appendChild(label);
+		}
+		if (productCat(productName) == "bakery"){
+			s6.appendChild(label);
+		}
 	}
 	document.getElementsByClassName('tablinks')[1].click()
 }

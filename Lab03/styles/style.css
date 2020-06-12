@@ -7,6 +7,7 @@
 
 body, html {
   height: 100%;
+  padding:0;
   margin: 0;
 }
 
@@ -25,25 +26,25 @@ p7 {
   text-align: center;
 }
 
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.image1 {
+.logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-  border: 2px solid #629e6a;
+  border: 5px solid #629e6a;
   padding: 5px;
 }
 
 .background {
   object-fit: cover;
   width: 100%;
-  height: 300px;
+  height: 375px;
+}
+
+.backgroundText {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .centered {
@@ -51,6 +52,76 @@ p7 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#footer{
+  position: absolute;
+  text-align: center; 
+  bottom: -70%;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.middle{
+  margin-left:25px;
+  margin-right:25px;
+}
+
+.lineup{
+  display: inline-block;
+  width: 33%;
+}
+.card {
+  display: grid;
+  grid-template-columns: 335px;
+  grid-template-rows: 110px 40px;
+  grid-template-areas: "image" "text";
+  border-radius: 25px;
+  background: #ffa200;
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+  width: 335px;
+  height:150px;
+}
+.ctext {
+  grid-area: text;
+  text-align: center;
+  background-color: #629e6a;
+  padding: 10px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.cimage {
+  grid-area: image;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height:110px;
+  width:100%;
+  object-fit: cover;
+}
+.card:hover {
+  transform: scale(1.10);
+}
+.button {
+  background-color: #ffa200;
+  border-radius: 25px;
+  border-color: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover {
+  transform: scale(1.10);
 }
 
 /* Style the tab */
@@ -72,6 +143,7 @@ p7 {
   padding: 10px 20px;
   transition: 0.3s;
   font-size: 20px;
+  border-radius: 25px;
 }
 
 /* Change background color of buttons on hover */
@@ -88,7 +160,40 @@ p7 {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: none;
   border-top: none;
   height: 300px;
+  border-radius: 25px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #629e6a;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: solid;
+  border-color: white;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.active{
+  background-color: #629e6a;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+  background-color: #ffa200;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }

@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<title>
-		GoGroceries
-	</title>
-	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
-	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  <title>
+    GoGroceries
+  </title>
+  <! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+<a href="https://rwill046.github.io/Lab03/index.html"><img src="images/gg.jpeg" class="logo" style="width:35%;"></a>
 
-<a href="https://rwill046.github.io/Lab03/index.html"><img src="images/gg.jpeg" class="image1" style="width:35%;"></a>
-
-<div class = "container">
+<div class = "backgroundText">
   <img src="images/background.jpg" class="background" style="width: 100%;">
   <div class = "centered">
     <h1>WELOME TO GOGROCERIES</h1>
@@ -21,54 +19,113 @@
   </div>
 </div>
 
-<!-- Tab links, each one with an onclick event associated with it -->
-<div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">Home</button>
-  <button class="tablinks" onclick="openInfo(event, 'Products')">Browse</button>
-  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+<!-------------------------------------------------------------------------------------------------------------->
+<div class = "middle">
+  <div class="tab">
+    <button class="tablinks" onclick="openInfo(event, 'Client')">Home</button>
+    <button class="tablinks" onclick="openInfo(event, 'Products')">Browse</button>
+    <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+  </div>
 </div>
 
-<!-- Tab content -->
-<div id="Client" class="tabcontent">
-  <h3>Let's pick what's right for you</h3>
-  <hr>
-	Your Preferences:<br>
-	<input type="checkbox" id="v" value="Vegetarian">
-  	<label for="v"> Vegetarian Items </label><br>
-  	<input type="checkbox" id="g" value="GlutenFree">
-  	<label for="g"> Gluten Free Items </label><br>
-  	<input type="checkbox" id="o" value="Organic">
-  	<label for="o"> Organic Items</label><br>
-  	<input type="checkbox" id="a" value="All">
-  	<label for="a"> All Items</label><br>
-    <button id = "dispProd" type="button" onclick="populateListProductChoices(this.id, 'displayProduct')">View Items</button>
+<!-------------------------------------------------------------------------------------------------------------->
+<div class = "middle">
+  <div id="Client" class="tabcontent">
+    <h3>Let's pick what's right for you</h3>
+    <hr>
+    What kind of items are you looking to browse today?<br>
+    
+    <form>
+    <div class="lineup">
+    <input type="checkbox" id="v" value="Vegetarian">
+      <label for="v" type="checkbox" value> 
+        <div class="card">
+        <div class="cimage"><img src="images/veg.jpeg" class="cimage" style="width:100%"></div>
+        <div class="ctext"><h3>Vegetarian</h3></div>
+        </div> 
+      </label>
+    </div>
+    <div class="lineup">
+    <input type="checkbox" id="g" value="GlutenFree">
+      <label for="g" type="checkbox" value>
+        <div class="card">
+        <div class="cimage"><img src="images/gf.jpeg" class="cimage" style="width:100%"></div>
+        <div class="ctext"><h3>Gluten Free</h3></div>
+        </div> 
+      </label>
+    </div>
+    <div class="lineup">
+    <input type="checkbox" id="o" value="Organic">
+      <label for="o" type="checkbox" value>
+        <div class="card">
+        <div class="cimage"><img src="images/org.jpeg" class="cimage" style="width:100%"></div>
+        <div class="ctext"><h3>Organic</h3></div>
+        </div> 
+      </label>
+    </div>
+    <div class="lineup">
+    <input type="checkbox" id="a" value="All">
+      <label for="a" type="checkbox" value>
+        <div class="card">
+        <div class="cimage"><img src="images/background.jpg" class="cimage" style="width:100%"></div>
+        <div class="ctext"><h3>All Items</h3></div>
+        </div> 
+      </label>
+    </div>
+    <button id = "dispProd" class="button" type="button" onclick="populateListProductChoices(this.id)">View Items</button>
+    </form>
+  </div>
 </div>
 
-<div id="Products" class="tabcontent">
-  <h3>Your targeted products</h3>
-  <hr>
-  <p>We preselected products based on your preferences.</p>
-	 <p id = "nd" >Please Select a Preference</p>
-	 <div id="displayProduct"></div>
-	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
-		Add selected items to cart.
-	</button>
+<!-------------------------------------------------------------------------------------------------------------->
+<div class = "middle">
+  <div id="Products" class="tabcontent">
+    <h3>Here's what we have for you</h3>
+    <hr>
+    <p id = "nd" >Please select preferences from the previous page so we can make your search faster.</p>
+    
+    <button class="accordion">Vegetables</button>
+     <div class="panel">
+      <div id="displayVegetables"></div>
+    </div>
+    <button class="accordion">Fruits</button>
+    <div class="panel">
+      <div id="displayFruits"></div>
+    </div>
+    <button class="accordion">Meats</button>
+    <div class="panel">
+      <div id="displayMeats"></div>
+    </div>
+    <button class="accordion">Dairy Products</button>
+    <div class="panel">
+      <div id="displayDairy"></div>
+    </div>
+    <button class="accordion">Bakery Products</button>
+    <div class="panel">
+      <div id="displayBakery"></div>
+    </div>
+    <button id="addCart" class="button" type="button" class="block" onclick="selectedItems()">Add selected items to cart.</button>
+  </div>
 </div>
 
-<div id="Cart" class="tabcontent">
-  <h3>Cart</h3>
-  <hr>
-  <p>Here is your cart.</p>
-  <div id="displayCart"></div>
+<!-------------------------------------------------------------------------------------------------------------->
+<div class = "middle">
+  <div id="Cart" class="tabcontent">
+    <h3>Cart</h3>
+    <hr>
+    <p>Here is your cart.</p>
+    <div id="displayCart"></div>
+  </div>
 </div>
 
+<!-------------------------------------------------------------------------------------------------------------->
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>
 
 </body>
 
-<footer style = "text-align: center; background-color:#629e6a;">
-  	<p7>Website Designed by: Rohaan Williams (#300010136)</p7> 
-	</footer>
-
+<!-------------------------------------------------------------------------------------------------------------->
+<footer id="footer">
+    <p7>Website Designed by: Rohaan Williams (#300010136)</p7> 
+  </footer>
 </html>

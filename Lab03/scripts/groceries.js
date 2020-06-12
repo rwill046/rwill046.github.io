@@ -8,84 +8,104 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 1.99
+		price: 1.99,
+		category: "vegetable"
 	},
 	{
 		name: "Bread",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 2.35
+		price: 2.35,
+		category: "bakery"
 	},
 	{
 		name: "Salmon",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 10.00
+		price: 10.00,
+		category: "meat"
 	},
 	{
 		name: "Onion",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 2.00
+		price: 2.00,
+		category: "vegetable"
 	},
 	{
 		name: "Rib Eye Steak",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 15.00
+		price: 15.00,
+		category: "meat"
 	},
 	{
-		name: "Eggs",
+		name: "Swiss Cheese",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 5.00
+		price: 5.00,
+		category: "dairy"
 	},
 	{
 		name: "Milk",
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 4.00
+		price: 4.00,
+		category: "dairy"
 	},
 	{
 		name: "Orange",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 3.50
+		price: 3.50,
+		category: "fruit"
+	},
+	{
+		name: "Apple",
+		vegetarian: true,
+		glutenFree: true,
+		organic: true,
+		price: 2.50,
+		category: "fruit"
 	},
 	{
 		name: "Chocolate Cake",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 7.00
+		price: 7.00,
+		category: "bakery"
 	},
 	{
-		name: "Cereal",
+		name: "Yogurt",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 3.25
+		price: 3.25,
+		category: "dairy"
 	},
 	{
 		name: "Bell Peppers",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 5.50
+		price: 5.50,
+		category: "vegetable"
 	},
 	{
 		name: "Pork Sausages",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 6.00
+		price: 6.00,
+		category: "meat"
 	}
 ];
 
@@ -146,6 +166,14 @@ function productPrice(productName){
 	for (let i = 0; i < products.length; i += 1) {
 		if (products[i].name == productName) {
 			return products[i].price;
+		}
+	}
+}
+
+function productCat(productName){
+	for (let i = 0; i < products.length; i += 1) {
+		if (products[i].name == productName) {
+			return products[i].category;
 		}
 	}
 }

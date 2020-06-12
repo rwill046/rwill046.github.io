@@ -40,8 +40,7 @@ function populateListProductChoices(slct1, slct2) {
         s1.push("All");
     }
     var s2 = document.getElementById(slct2);
-	
-    s2.innerHTML = "";
+    s2.innerHTML = "test";
 		
 	// obtain a reduced list of products based on restrictions
     var optionArray = restrictListProducts(products, s1);
