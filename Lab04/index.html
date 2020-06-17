@@ -16,9 +16,10 @@
 	</head>
 
 	<body>
+
 		<!--Navbar-->
 		<section>
-		    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
 		    	<div class="container-fluid">
 		    		<a class="navbar-logo" href="#"><img src="images/LS.jpeg" class="logo"></a>
 		    		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -53,6 +54,7 @@
 		    	</div>
 		    </nav>
 		</section>
+
 	    <!--SlideShow-->
 	    <section>
 		    <div id="slides" class="carousel slide" data-ride="carousel">
@@ -61,30 +63,31 @@
 		    		<li data-target="#slides" data-slide-to="1"></li>
 		    		<li data-target="#slides" data-slide-to="2"></li>
 		    	</ul>
-		    <div class="carousel-inner">
-		    	<div class="carousel-item active">
-		    		<img src = "images/LSctool.jpeg">
-		    		<div class="carousel-caption">
-		    			<h1 class="display-2">WELCOME</h1>
-		    			<h2>Look Sharp, Feel Good.</h2>
-		    			<button type = "button" class="btn btn-outline-light btn -lg">Book Appointment</button>
-		    		</div>
-		    	</div>
-		    	<div class="carousel-item">
-		    		<img src = "images/LSgen.jpeg">
-		    	</div>
-		    	<div class="carousel-item">
-		    		<img src = "images/LSstool.jpeg">
-		    	</div>
-		    </div>
+			    <div class="carousel-inner">
+			    	<div class="carousel-item active">
+			    		<img src = "images/LSctool.jpeg">
+			    		<div class="carousel-caption">
+			    			<h1 class="display-2">WELCOME</h1>
+			    			<h2>Look Sharp, Feel Good.</h2>
+			    			<button type = "button" class="btn btn-outline-light btn-lg">Book Appointment</button>
+			    		</div>
+			    	</div>
+			    	<div class="carousel-item">
+			    		<img src = "images/LSgen.jpeg">
+			    	</div>
+			    	<div class="carousel-item">
+			    		<img src = "images/LSstool.jpeg">
+			    	</div>
+			    </div>
 			</div>
 		</section>
+
 		<!--Services-->
 		<section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Tools</h2>
-                    <h3 class="section-subheading text-muted">We're ready to shape any look you desire.</h3>
+                    <h2 class="section-heading text-uppercase">Service</h2>
+                    <h3 class="section-subheading text-muted">We're ready to shape any look you desire with all of our tools.</h3>
                 </div>
 
                 <div class="row">
@@ -97,7 +100,7 @@
 		                        <img class="img-fluid" src="images/LScut.jpeg"/>
 		                    </a>
 		                    <div class="portfolio-caption">
-		                    	<div class="portfolio-caption-heading">Hair Cut / $25</div>
+		                    	<div class="portfolio-caption-heading">Hair <span style="color:#DAA520;">Cut</span> / $25</div>
 		                        <div class="portfolio-caption-subheading text-muted"><p class="text-muted">We offer haircuts of any style and length. Any look you have in mind will be carried out with extreme precision and care.</p></div>
 		                    </div>
 		                </div>
@@ -111,7 +114,7 @@
 		                        <img class="img-fluid" src="images/LSstyle.jpeg"/>
 		                    </a>
 		                    <div class="portfolio-caption">
-		                    	<div class="portfolio-caption-heading">Hair Style / $30</div>
+		                    	<div class="portfolio-caption-heading">Hair <span style="color:#DAA520;">Style</span> / $30</div>
 		                        <div class="portfolio-caption-subheading text-muted"><p class="text-muted">We keep a wide variety of professinal products ready for when you're looking to try new styles.</p></div>
 		                    </div>
 		                </div>
@@ -125,7 +128,7 @@
 		                        <img class="img-fluid" src="images/LSshave.jpeg"/>
 		                    </a>
 		                    <div class="portfolio-caption">
-		                    	<div class="portfolio-caption-heading">Beard Shave / $15</div>
+		                    	<div class="portfolio-caption-heading">Beard <span style="color:#DAA520;">Shave</span> / $15</div>
 		                        <div class="portfolio-caption-subheading text-muted"><p class="text-muted">We keep our razors sharp in case you want a full shave or a quick trim.</p></div>
 		                    </div>
 		                </div>
@@ -133,24 +136,13 @@
                 </div>
             </div>
         </section>
-        <!--About-->
-        <section class="page-section bg-light" id="about">
-		    <div class="container">
-		    <div class = "row">
-		    	<div class="text-center">
-			    	<h2 class="section-heading text-uppercase">About Us</h2>
-			    	<p class=" text-muted">From when this started as a hobby of two brothers to when it became a nation wide outlet, LookSharp has always put the customers first. Starting out small, we understand the importance of a friendly, yet professional cut. We do our best to make sure you enjoy your speedy stay at our salon but more importantly, we hope that you walk out smart and smiling.</p>
-			    </div>
-			</div>
-			</div>
-		</section>
 
 		<!--Address-->
 		<section class="page-section" id="ad">
 		    <div class="container">
 		    	<div class="text-center">
 			    	<h2 class="section-heading text-uppercase">Address</h2>
-			    	<p class=" text-muted"> You can find us at the following address.
+			    	<h3 class="section-subheading text-muted"> You can find us at the following address.</h3>
 					<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 50px">
 						<iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0" allowfullscreen></iframe>
 					</div>
@@ -158,14 +150,24 @@
 			</div>
 		</section>
 
-
+		<!--About-->
+        <section class="page-section bg-light" id="about">
+		    <div class="container">
+		    <div class = "row">
+		    	<div class="text-center">
+			    	<h2 class="section-heading text-uppercase">About Us</h2>
+			    	<h3 class="section-subheading text-muted">What started as a hobby between two brothers became a nation wide buisness, and even though years have passed LookSharp always had one goal - put the <span style="color:#DAA520;">customers first</span>. Starting out small, we understand the importance of a friendly, yet professional salon session. We do our best to make sure you enjoy your speedy stay at our salon but more importantly, we hope that you walk out smiling and <span style="color:#DAA520;">looking sharp</span>.</h3>
+			    </div>
+			</div>
+			</div>
+		</section>
 
         <!--Team-->
-        <section class="page-section bg-light" id="team">
+        <section class="page-section" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Meet your Stylists</h2>
-                    <h3 class="section-subheading text-muted">Friendly. Experienced. Skilled.</h3>
+                    <h3 class="section-subheading text-muted"><span style="color:#DAA520;">Friendly. Experienced. Skilled.</span></h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
@@ -195,12 +197,13 @@
                 </div>
             </div>
         </section>
+
         <!-- Book-->
         <section class="page-section bg-light" id="book">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Book an Appointment</h2>
-                    <h3 class="section-subheading text-muted">We're here to help you through a smooth process.</h3>
+                    <h3 class="section-subheading text-muted">We're here to help you have a smooth process.</h3>
                 </div>
                 <form id="contactForm" name="sentMessage" novalidate="novalidate">
                     <div class="row align-items-stretch mb-5">
@@ -236,38 +239,32 @@
                 </form>
             </div>
         </section>
-        <!--Contact Us-->
-        <section class="page-section bg-light" id="contact">
-        	<div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <p class="text-muted">If you need any further help or clarification please contact us at LSshop@gmail.com or call us on +1-(613)-400-7777.</p>
-                </div>
-            </div>
-        </section>
 
-    <footer class="footer py-4" id="footer">
-    	<div class="container-fluid padding">
-    		<div class = "row text-center">
-    			<div class = "col-md-4"> 
-					<img src="images/LS.jpeg" class="logo"> 
-					<hr class = "light"> 
-					<p>LSshop@gmail.com</p>
-					<p>+1-(613)-400-7777</p>
-				</div>
-				<div class = "col-md-4"> 
-					<hr class = "light"> 
-					<h5> Hours</h5>
-					<hr class = "light"> 
-					<p>Mon-Fri: 9am - 6pm</p>
-					<p>Sat,Sun: 11am - 6pm</p>
-				</div>
-				<div class = "col-md-12">
-					<hr class = "light">
-					<h5>Designed by:Rohaan Williams (#300010136)</h5>
+        <!--footer-->
+	    <footer class="footer py-4" id="footer">
+	    	<div class="container-fluid padding">
+	    		<div class = "row text-center">
+	    			<div class = "col-md-6"> 
+						<img src="images/LS.jpeg" class="logo"> 
+						<hr class = "light"> 
+						<p><span style="color:#DAA520;">lsshop@gmail.com</span></p>
+						<p><span style="color:#DAA520;">+1-(613)-400-7777</span></p>
+					</div>
+					<div class = "col-md-4">
+					<br> 
+						<hr class = "light"> 
+						<h5> Hours</h5>
+						<hr class = "light"> 
+						<p>Mon-Fri: 9am - 6pm</p>
+						<p>Sat,Sun: 11am - 6pm</p>
+					</div>
+					<div class = "col-md-12">
+						<hr class = "light">
+						<h5>Designed by: Rohaan Williams (#300010136)</h5>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
+
 	</body>
 </html>
