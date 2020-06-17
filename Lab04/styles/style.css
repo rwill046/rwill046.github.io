@@ -1,10 +1,36 @@
 *{
-  box-sizing: border-box;
-  font-family: ;
-  margin: 0;
+  font-family: 'Didot', serif;
+  color: black;
   /*background-color: black;
   color: #DCDCDC; #DAA520;
   */
+}
+
+html, body{
+	height:100%;
+	width:100%;
+}
+
+.navbar{
+	padding: .8rem;
+}
+
+.navbar-nav li{
+	padding-right: 20px;
+}
+
+.nav-link{
+	font-size: 1.1em;
+}
+
+.carousel-inner img{
+	width:100%;
+}
+
+.carousel-caption{
+	position: absolute;
+	top:60%;
+	transform: translateY(-50%);
 }
 
 .logo {
