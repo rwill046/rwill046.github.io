@@ -181,6 +181,13 @@ hr {
   height: 1px;
 }
 
+.fa-twitter{
+	color: #DAA520;
+}
+.fa-instagram{
+	color: #DAA520;
+}
+
 #footer{
   text-align: center; 
   background-color: black;
