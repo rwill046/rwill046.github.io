@@ -1,6 +1,5 @@
 *{
   font-family: 'Didot', serif;
-  color: black;
   /*background-color: black;
   color: #DCDCDC; #DAA520;
   */
@@ -148,7 +147,6 @@ section#contact form#contactForm .form-control:focus {
   border-color: #DAA520;
   box-shadow: none;
 }
-
 
 #footer{
   text-align: center; 
