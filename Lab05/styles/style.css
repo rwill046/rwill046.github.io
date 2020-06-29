@@ -8,12 +8,17 @@
 html, body{
 	height:100%;
 	width:100%;
+  scroll-padding-top: 58px;
 }
 
 .navbar-dark{
+  position: fixed !important;
+  top:0;
 	padding: .8rem;
 	background-color: black;
 	color: #DCDCDC;
+  z-index: 100;
+  width: 100%;
 }
 
 .navbar-nav li{
@@ -42,7 +47,7 @@ html, body{
 }
 
 .page-section {
-  padding: 3.5rem 0;
+  padding: 2.5rem 0;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -56,13 +61,34 @@ html, body{
   margin-bottom: 3rem;
 }
 
+.page-section2 {
+  padding: 2.5rem 0;
+  background-color: #DCDCDC;
+}
+.page-section2 h2.section-heading {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.page-section2 h3.section-subheading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
 .logo {
-	width: 30%;
+  width: 30%;
 	margin-bottom: 2px;
 }
 
 h1 {
 	text-shadow: 3px 3px 1px black;
+}
+u{
+    text-decoration: none;
+    border-bottom: 1px solid #DAA520;
+    border-top: 1px solid #DAA520;
 }
 p{
 	font-style: italic;
@@ -186,6 +212,21 @@ hr {
 }
 .fa-instagram{
 	color: #DAA520;
+}
+.fa-concierge-bell{
+  color: #DAA520;
+}
+.fa-users{
+  color: #DAA520;
+}
+.fa-cut{
+  color: #DAA520;
+}
+.fa-calendar-plus{
+  color: #DAA520;
+}
+.fa-map-marker-alt{
+  color: #DAA520;
 }
 
 #footer{
