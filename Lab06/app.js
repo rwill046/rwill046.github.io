@@ -1,12 +1,12 @@
 // Entry point for the application
-var express = require('express');
-var app = express();
+var express = require('express'); //use express
+var surveyController = require('./surveyController');
+var app = express(); 
+app.set('view engine', 'ejs'); //html content
+app.use('/public/', express.static('public')); //use images and css
 
-app.set('view engine', 'ejs');
-
-
-app.get('/', function(req, res){
-    res.render('profile');
-});
+// fire function from surveyController
+surveyController(app);
 
 app.listen(3000);
+console.log('listening port 3000');

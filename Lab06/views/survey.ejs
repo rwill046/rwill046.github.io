@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <!--bootstrap, jquery-->
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!--css-->
+        <link href="public/styles/style.css" rel="stylesheet">
+    	
+		<title>
+		Store Support
+		</title>
+	</head>
+
+	<body>
+        
+        <div id="bannerimage"><a href="#top"><img src="public/images/logo.png" alt="Logo" width="25%"></a></div>
+        
+
+        <form id="surveyForm" method= "POST" action="/">
+            <div class="form-group">
+            <br>
+
+            <div class="container">
+                <h1>TUNE YOUR BROWSING EXPERIENCE</h1>
+                <p1> Welcome to Playstation support!<br>To help up imporve the <a href="https://store.playstation.com" style="text-decoration:none;color:#006AFF">Playstation Store</a> browsing expererience for you as well as other customers, please answer this survey.</p1>
+                <div class = row>
+                <div class = "col-12">
+                <div class="image"><a href="https://store.playstation.com"><img src="public/images/ps-store.jpg" alt="Playstation Store" height="auto" width="700"></a></div>        
+                </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="container" id="top">
+                    <h2>Tell us a bit about yourself.</h2>
+                    <div class = "opt">
+                        <div class = "row">
+                        <div class = "col-6">
+                        <input type="text" class="form-control" placeholder="First name" name = "firstname">
+                        </div>
+                        <div class = "col-6">
+                        <input type = "text" class="form-control" placeholder="Last name" name ="lastname">
+                        </div>
+                        </div>
+                        <br>
+                        
+                        <div class = "col-12">
+                        <input type = "email" class="form-control" placeholder="Email Address" name ="email">
+                        </div>
+                    </div>
+            </div>
+
+            <div class="container">
+                <h2>How would you rate your PS store browsing experience?</h2>
+                <ul class="likert">
+                    <li>Bad</li>
+                    <li><input type="radio" name="exp" value="1" /></li>
+                    <li><input type="radio" name="exp" value="2" /></li>
+                    <li><input type="radio" name="exp" value="3" /></li>
+                    <li><input type="radio" name="exp" value="4" /></li>
+                    <li><input type="radio" name="exp" value="5" /></li>
+                    <li>Good</li>
+                </ul>
+            </div>
+        
+            <div class="container">
+                <h2>Which platform do you access the storefront from?</h2>
+                <div class = "opt">
+                    <label for="sel1">Platform Used:</label>
+                    <select name="plat" size="1" id="sel1" class="text" style="font-size: 2vh;">
+                        <option value="PC">PC</option>
+                        <option value="Playstation">Playstation Console</option>
+                        <option value="Mobile">Mobile</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="container">
+                <h2>Which colour do you associate or brand with?</h2>
+                <ul class="likert">
+                    <li>Blue</li><li><input type="radio" name = "col" value="Blue"></li><br>
+                    <li>White + Blue</li><li><input type="radio" name = "col" value="White and Blue"></li><br>
+                    <li>White + Black</li><li><input type="radio" name = "col" value="White and Black"></li>
+                </ul>
+            </div>
+        
+            <div class="container">
+                <h2>Which games attract you to the store?</h2>
+                <div class = "opt">
+                    Action <input type="checkbox" name = "gen" value="Action">&emsp;&emsp;
+                    Horror <input type = "checkbox" name ="gen" value="Horror">&emsp;&emsp;
+                    RPG <input type = "checkbox" name ="gen" value="RPG"><br><br>
+                    Multiplayer <input type = "checkbox" name ="gen" value="Multiplayer">&emsp;&emsp;
+                    FPS <input type = "checkbox" name ="gen" value="FPS">&emsp;&emsp;
+                    <br>
+                </div>
+            </div>
+            
+            <input type="submit" class="btn btn-primary" value="SUBMIT" id="sid"></input>
+            <br>
+            <span style="color: #000033;">Have a Nice Day.</span>
+        </form>
+        <!--jquery-->
+		<script src="public/action.js"></script>
+	</body>
+
+	<footer id="footer">
+            <p2>Website Designed by: Rohaan Williams (#300010136)</p2> 
+    </footer>
+</html>

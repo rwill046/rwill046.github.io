@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Analysis</title>
+    </head>
+
+    <body style="background-color:#000033; font-family: verdana; color: #DCDCDC;">
+        <h1 style="text-align: center; color: white;">Survey Analysis</h1>
+        <hr>
+
+        <h2>User Info</h2>
+        <h3>First name:</h3>
+        <ul>
+            <% for (var i=0; i<results[0].length; i++){ %>
+                <li><%= results[0][i].firstname %> :  <%= results[0][i].count %></li>
+            <% } %>    
+        </ul>
+        <h3>Last name:</h3>
+        <ul>
+            <% for (var i=0; i<results[1].length; i++){ %>
+                <li><%= results[1][i].lastname %> :  <%= results[1][i].count %></li>
+            <% } %>    
+        </ul>
+        <h3>E-mail address:</h3>
+        <ul>
+            <% for (var i=0; i<results[2].length; i++){ %>
+                <li><%= results[2][i].email %> :  <%= results[2][i].count %></li>
+            <% } %>    
+        </ul>
+        <hr>
+            
+        <h2>Experience Rating</h2>
+        <h3>Rating given (Out of 5):</h3>
+        <ul>
+            <% for (var i=0; i<results[3].length; i++){ %>
+                <li><%= results[3][i].exp %> :  <%= results[3][i].count %></li>
+            <% } %>    
+        </ul>
+        <hr>
+
+        <h2>Device Used</h2>
+        <h3>Device generally used to access store:</h3>
+        <ul>
+            <% for (var i=0; i<results[4].length; i++){ %>
+                <li><%= results[4][i].plat %> :  <%= results[4][i].count %></li>
+            <% } %>    
+        </ul>
+        <hr>
+
+        <h2>Popular Game Geners</h2>
+        <h3>Color generes chosen:</h3>
+        <ul>
+            <% for (var i=0; i<results[5].length; i++){ %>
+                <li><%= results[5][i].col %> :  <%= results[5][i].count %></li>
+            <% } %>    
+        </ul>
+        <hr>
+
+        <h2>Popular Game Geners</h2>
+        <h3>Game Generes Chosen:</h3>
+        <ul>
+            <% for (var i=0; i<results[6].length; i++){ %>
+                <li><%= results[6][i].gen %> :  <%= results[6][i].count %></li>
+            <% } %>    
+        </ul>
+        <hr>
+
+    </body>
+
+    <footer style="text-align: center; color:black; background-color: white; width: 100%;">
+        <p2>Website Designed by: Rohaan Williams (#300010136)</p2> 
+    </footer>
+</html>
