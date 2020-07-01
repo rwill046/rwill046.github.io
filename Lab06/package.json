@@ -1,0 +1,23 @@
+{
+  "name": "lab06",
+  "version": "1.0.0",
+  "description": "Survey for SEG3125 Lab06",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "survey",
+    "uOttawa",
+    "Lab",
+    "college",
+    "SEG3125"
+  ],
+  "author": "Rohaan Williams",
+  "license": "ISC"
+}
