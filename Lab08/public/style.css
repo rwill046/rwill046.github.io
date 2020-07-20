@@ -1,0 +1,29 @@
+body {
+  font-family: 'Didot', serif;
+  background-color: #ecdfb8;
+}
+
+.navbar {
+  background-color: #e30000;
+}
+
+h1{
+  color: #ecdfb8;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:white;
+  height: 1px;
+}
+
+.footer{
+  text-align: center; 
+  background-color: #e30000;
+  color: white;
+  padding: 10px;
+}

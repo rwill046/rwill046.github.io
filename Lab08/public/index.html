@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./favicon.png" />
+    <!--manifest.json provides metadata used when your web app is installed on a user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/ -->
+    <link rel="manifest" href="./manifest.json" />
+    <!-- Bootstrap & Jquery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <title>Delicious Desserts</title>
+  </head>
+
+  <body>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Navbar content -->
+        <div class="w-100 order-1">
+          <a class="navbar-nav mr-auto" href="#"><img src="logo2.png" alt="Logo" style="width: 20%;"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navit">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse w-100 order-2">
+          <a class="navbar-brand text-center mx-auto" href="#"><h1>Delicious Desserts</h1></a>
+        </div>
+        <div class="w-100 order-3">
+          <div class="collapse navbar-collapse" id="navit">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+
+
+    <!--footer-->
+    <footer class="footer">
+	    	<div class="container-fluid padding">
+	    		<div class = "row text-center">
+	    			<div class = "col-md-6"> 
+						<img src="logo.png" style="width: 50%; padding-top: 14px"> 
+						<hr class = "light"> 
+						<p><span style="color:#ecdfb8;">deldes@gmail.com</span></p>
+						<p><span style="color:#ecdfb8;">+1-(613)-700-7777</span></p>
+					</div>
+					<div class = "col-md-6">
+					<br> 
+						<hr class = "light"> 
+						<h5> Operating Hours</h5>
+						<hr class = "light"> 
+						<p>Mon-Fri: 9am - 6pm</p>
+						<p>Sat,Sun: 11am - 6pm</p>
+					</div>
+					<div class = "col-md-12">
+						<hr class = "light">
+						<h5>Designed by: Rohaan Williams (#300010136)</h5>
+					</div>
+				</div>
+			</div>
+		</footer>
+  </body>
+</html>
