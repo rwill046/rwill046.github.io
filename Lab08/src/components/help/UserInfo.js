@@ -41,9 +41,7 @@ class UserInfo extends Component{
                             </div>
                         </div>
                     </div>
-                    <div className="text-center">
-                        <button type = "button" className="btn btn-outline-dark text-uppercase btn -lg">SUBMIT</button>
-                    </div>
+                    <div className="text-center"><button>SUBMIT</button></div>
                 </form>
             </div>
         )
