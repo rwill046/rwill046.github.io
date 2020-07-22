@@ -1,0 +1,30 @@
+.Invalid{
+    height: 100vh;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff !important;
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.fa{
+    color: #b29cdf !important;
+}
+
+.inHyp:link{
+    text-decoration: none;
+    color: #b29cdf !important;
+}
+  
+.inHyp:visited {
+   text-decoration: none;
+   color: #b29cdf !important;
+}
+  
+.inHyp:hover {
+  text-decoration: underline;
+  color: #ecdfb8 !important;
+}
