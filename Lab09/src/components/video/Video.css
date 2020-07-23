@@ -1,0 +1,15 @@
+.Video{
+    font-family: 'Didot', serif;
+    background-color: white;
+    text-align: center;
+    margin: 15px; 
+    padding-left: 100px;
+    padding-right: 100px;
+    min-height: 100vh !important;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: #b29cdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

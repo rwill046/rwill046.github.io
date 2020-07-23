@@ -1,0 +1,24 @@
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:white;
+  height: 1px;
+}
+
+.footer{
+  text-align: center; 
+  background-color: #b29cdf;
+  color: white;
+  padding: 10px;
+}
+
+.fontChange{
+  color:#ecdfb8;
+}
+
+.logo{
+  width: 45%;
+  padding-top: 14px;
+}

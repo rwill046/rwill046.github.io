@@ -1,0 +1,15 @@
+.Help{
+    font-family: 'Didot', serif;
+    background-color: white;
+    text-align: center;
+    margin: 15px; 
+    padding-left: 100px;
+    padding-right: 100px;
+    min-height: 100vh !important;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }

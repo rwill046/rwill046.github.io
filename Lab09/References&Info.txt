@@ -1,0 +1,14 @@
+Icons - https://fontawesome.com/
+Stock Images - https://www.pexels.com/
+React Introduction -[NetNinja Tutorial on Youtube] https://www.youtube.com/watch?v=OxIDLw0M-m0&list=PL4cUxeGkcC9ij8CfkAY2RAGb-tmkNwQHG 
+Google Translate Introduction - https://www.w3schools.com/HOWTO/howto_google_translate.asp
+
+Dependencies to run the App- 
+1) React App - https://github.com/facebook/create-react-app
+2) React Router - https://reactrouter.com/web/guides/quick-start
+
+Main domains of the app running on localhost:3000:
+localhost:3000/ - Homepage
+localhost:3000/video - Video Tutorial focusing on Absorb Process
+localhost:3000/help - Help Page to support Heuristics
+localhost:3000/notfound - Error Recovery Page to support Heuristics
