@@ -9,7 +9,7 @@ const Video = props => {
         <div className="container-fluid">
             <h2>
                 <i className="fas fa-play"></i> <u>{props.message}</u><br />
-                <video width="1920" height="1080" controls>
+                <video width="950" height="475" controls>
                     <source src={vid} type="video/mp4" />
                 </video>
                 <br/>
